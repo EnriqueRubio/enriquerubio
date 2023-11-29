@@ -2385,7 +2385,8 @@ input, select, textarea {
 			padding: 0.35em 0 0 3.5em;
 			position: relative;
 			vertical-align: top;
-			width: 48%;
+			width: 33%; /* Ajusta el ancho para formar 3 columnas */
+  			box-sizing: border-box;
 		}
 
 			ul.feature-icons li:before {
