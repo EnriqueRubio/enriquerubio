@@ -46,7 +46,7 @@
 								
 								<div class="image main" data-position="center">
 									<img src="images/fondo2.gif" alt="" />
-									<button class="boton-cv">Descargar CV</button>
+									<button class="boton-cv" onClick="descargarPDF()">Descargar CV</button>
 								</div>
 							
 							</section>
@@ -65,18 +65,18 @@
 									<h4>Intereses</h4>
 									<ul class="feature-icons">
 										<li class="icon solid fa-code">Desarrollo web</li>
-										<li class="icon solid fa-cubes">Inteligencia Artificial</li>
-										<li class="icon solid fa-book">Microservicios</li>
-										<li class="icon solid fa-coffee">I+D</li>
-										<li class="icon solid fa-bolt">Análisis de datos</li>
-										<li class="icon solid fa-users">Ciberseguridad</li>
+										<li class="icon solid fa-brain">Inteligencia Artificial</li>
+										<li class="icon solid fa-cubes">Microservicios</li>
+										<li class="icon solid fa-microscope">I+D</li>
+										<li class="icon solid fa-chart-area">Análisis de datos</li>
+										<li class="icon solid fa-lock">Ciberseguridad</li>
 									</ul>
 									<h4>Habilidades personales</h4>
 									<ul class="feature-icons">
-										<li class="icon solid fa-code">Resolutivo</li>
-										<li class="icon solid fa-cubes">Trabajo bajo presion</li>
+										<li class="icon solid fa-lightbulb">Resolutivo</li>
+										<li class="icon solid fa-clock">Trabajo bajo presion</li>
 										<li class="icon solid fa-book">Autodidacta</li>
-										<li class="icon solid fa-coffee">Trabajo en equipo</li>
+										<li class="icon solid fa-people-carry">Trabajo en equipo</li>
 									</ul>
 								</div>
 							</section>
@@ -88,41 +88,37 @@
 								</header>
 								<h4>Lenguajes de programación</h4>
 								<ul class="feature-icons">
-										<li class="icon solid fa-code">Java</li>
-										<li class="icon solid fa-cubes">Python</li>
-										<li class="icon solid fa-cubes">Javascript</li>
-										<li class="icon solid fa-users">PHP</li>
-										<li class="icon solid fa-cubes">C#</li>
+										<li class="icon brands fa-java">Java</li>
+										<li class="icon brands fa-python">Python</li>
+										<li class="icon brands fa-js">Javascript</li>
+										<li class="icon brands fa-php">PHP</li>
 								</ul>
 								<h4>Lenguajes de marcas</h4>
 								<ul class="feature-icons">
-										<li class="icon solid fa-book">HTML</li>
-										<li class="icon solid fa-coffee">CSS</li>
-										<li class="icon solid fa-bolt">XML</li>
+										<li class="icon brands fa-html5">HTML</li>
+										<li class="icon brands fa-css3-alt">CSS</li>
 								</ul>
 								<h4>Frameworks</h4>
 								<ul class="feature-icons">
-										<li class="icon solid fa-bolt">React</li>
-										<li class="icon solid fa-users">UWP</li>
-										<li class="icon solid fa-cubes">WPF</li>
-										<li class="icon solid fa-cubes">Bootstrap</li>
-										<li class="icon solid fa-cubes">Ruby on rails</li>
-										<li class="icon solid fa-cubes">SpringBoot</li>
+										<li class="icon brands fa-react">React</li>
+										<li class="icon brands fa-bootstrap">Bootstrap</li>
+										<li class="icon solid fa-gem">Ruby on rails</li>
+										<li class="icon solid fa-leaf">SpringBoot</li>
 								</ul>
 								<h4>Bases de datos</h4>
 								<ul class="feature-icons">
-										<li class="icon solid fa-bolt">MySQL</li>
-										<li class="icon solid fa-users">MongoDB</li>
-										<li class="icon solid fa-users">MariaDB</li>
+										<li class="icon solid fa-database">MySQL</li>
+										<li class="icon solid fa-database">MongoDB</li>
+										<li class="icon solid fa-database">MariaDB</li>
 								</ul>
 								<h4>Control de versiones</h4>
 								<ul class="feature-icons">
-										<li class="icon solid fa-users">Git</li>
-										<li class="icon solid fa-users">Bitbucket</li>
+										<li class="icon brands fa-git">Git</li>
+										<li class="icon brands fa-bitbucket">Bitbucket</li>
 								</ul>
 								<h4>Gestion de proyectos</h4>
 								<ul class="feature-icons">
-										<li class="fa-brands jira">Jira</li>
+										<li class="icon brands fa-jira">Jira</li>
 								</ul>
 							</div>
 						</section>
@@ -200,7 +196,7 @@
 							<section id="portfolio">
 								<div class="container">
 									<header class="major">
-										<h2>Proyectos</h2>
+										<h2>Portfolio</h2>
 									</header>
 									<p>Breve descripcion de cada uno y su enlace, a parte categoria fecha tecnologia</p>
 									<div class="features">
@@ -249,6 +245,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function descargarPDF() {
+					var pdfURL = '/images/ENRIQUERUBIOCV.pdf';
+					var link = document.createElement('a');
+					link.href = pdfURL;
+					link.download = 'EnriqueRubioGonzalo-CV.pdf';
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+				}
+			</script>
 
 	</body>
 </html>
