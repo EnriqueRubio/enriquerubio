@@ -29,6 +29,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	.boton-cv {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 10px 20px;
+		background-color: #4acaa8;
+		color: white;
+		border: none;
+		border-radius: 0px;
+		font-family: "Lato", sans-serif;
+		font-size: 20pt;
+		font-weight: 400;
+		cursor: pointer;
+	  }
 body {
 	line-height: 1;
 }
