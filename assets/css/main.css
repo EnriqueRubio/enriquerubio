@@ -2392,17 +2392,27 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 	}
-
-		ul.feature-icons li {
-			text-decoration: none;
-			display: inline-block;
-			margin: 0 0 1.6875em 0;
-			padding: 0.35em 0 0 3.5em;
-			position: relative;
-			vertical-align: top;
-			width: 33%; /* Ajusta el ancho para formar 3 columnas */
-  			box-sizing: border-box;
-		}
+	ul.feature-icons.columns-2 li {
+		text-decoration: none;
+		display: inline-block;
+		margin: 0 0 1.6875em 0;
+		padding: 0.35em 0 0 3.5em;
+		position: relative;
+		vertical-align: top;
+		width: 48%; /* Ancho para 2 columnas */
+		box-sizing: border-box;
+	  }
+  
+	  ul.feature-icons.columns-3 li {
+		text-decoration: none;
+		display: inline-block;
+		margin: 0 0 1.6875em 0;
+		padding: 0.35em 0 0 3.5em;
+		position: relative;
+		vertical-align: top;
+		width: 31%; /* Ancho para 3 columnas */
+		box-sizing: border-box;
+	  }
 
 			ul.feature-icons li:before {
 				-moz-osx-font-smoothing: grayscale;
