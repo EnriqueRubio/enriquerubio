@@ -745,7 +745,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1400px) {
 
 			.row {
 				display: flex;
@@ -1808,6 +1808,8 @@ input, select, textarea {
 	header.major h2 {
 		color: #0E518F;
 		font-size: 3.5em;
+		text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+		
 	}
 
 		header.major h2 + p {
@@ -2223,6 +2225,7 @@ input, select, textarea {
 			display: block;
 			height: 20em;
 			border-radius: 0;
+			
 		}
 
 			.image.main img {
@@ -2773,7 +2776,7 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
+				margin: 0 auto 0.75em auto;
 				width: 8em;
 			}
 
@@ -2942,7 +2945,7 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1400px) {
 
 		/* Basic */
 
